@@ -30,7 +30,10 @@ public:
         std::cout << "Your Krea application has successfully been submitted.";
     }
 
-    Student() : tenth_grades(0.0), twelth_grades(0.0) {} // accessing the private data member
+    Student() : tenth_grades(0.0), twelth_grades(0.0) {}
+
+    // Destructor to deallocate dynamic memory
+    ~Student() {}
 
     void setTenth_grade()
     {
